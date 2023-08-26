@@ -99,16 +99,16 @@ case $action in
 		power_off_time=$(extract_value "Power-off time" | sed 's/time: //')
 
 		# Affiche les valeurs pour vérification et ajout dans domoticz
-		echo "Power: $power"					&& idx=$idx_power 			&& value=$power 			&& domoticz_update
-		echo "Operation mode: $operation_mode"  && idx=$idx_mode 			&& value=$operation_mode 	&& domoticz_update
-		echo "Speed: $speed"					&& idx=$idx_speed 			&& value=$speed 			&& domoticz_updatespeed
-												   idx=$idx_speedpourcent 	&& value=$speed 			&& domoticz_updatepourcent
-		echo "Oscillate: $oscillate"			&& idx=$idx_oscillate 		&& value=$oscillate			&& domoticz_update
-		echo "Angle: $angle"					&& idx=$idx_angle 			&& value=$angle				&& domoticz_updateangle
-		echo "LED: $led"						&& idx=$idx_led 			&& value=$led 				&& domoticz_update
-		echo "Buzzer: $buzzer"					&& idx=$idx_buzzer 			&& value=$buzzer 			&& domoticz_update
-		echo "Child lock: $child_lock"			&& idx=$idx_lock 			&& value=$child_lock		&& domoticz_update
-		echo "Power-off time: $power_off_time"	&& idx=$idx_timer 			&& value=$power_off_time	&& domoticz_updatepourcent
+		echo "Power: $power"			&& idx=$idx_power 		&& value=$power 		&& domoticz_update
+		echo "Operation mode: $operation_mode"  && idx=$idx_mode 		&& value=$operation_mode 	&& domoticz_update
+		echo "Speed: $speed"			&& idx=$idx_speed 		&& value=$speed 		&& domoticz_updatespeed
+							   idx=$idx_speedpourcent 	&& value=$speed 		&& domoticz_updatepourcent
+		echo "Oscillate: $oscillate"		&& idx=$idx_oscillate 		&& value=$oscillate		&& domoticz_update
+		echo "Angle: $angle"			&& idx=$idx_angle 		&& value=$angle			&& domoticz_updateangle
+		echo "LED: $led"			&& idx=$idx_led 		&& value=$led 			&& domoticz_update
+		echo "Buzzer: $buzzer"			&& idx=$idx_buzzer 		&& value=$buzzer 		&& domoticz_update
+		echo "Child lock: $child_lock"		&& idx=$idx_lock 		&& value=$child_lock		&& domoticz_update
+		echo "Power-off time: $power_off_time"	&& idx=$idx_timer 		&& value=$power_off_time	&& domoticz_updatepourcent
 		exit 0
 	 ;;
 	 
