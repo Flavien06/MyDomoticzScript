@@ -53,12 +53,12 @@ function domoticz_updatepourcent() {
 	domo_svalue=$value
 	if [[ $domo_svalue == "0" ]]; then
 		url_updatelevel="$url_base?type=command&param=udevice&idx=$idx&nvalue=1&svalue=1"
-		curl -s -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET "$url_updatelevel" #> /dev/null
+		curl -s -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET "$url_updatelevel" > /dev/null
 		domo_nvalue="0"
 	else domo_nvalue="1"
 	fi
 	url_updatelevel="$url_base?type=command&param=udevice&idx=$idx&nvalue=$domo_nvalue&svalue=$domo_svalue"
-	curl -s -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET "$url_updatelevel" #> /dev/null
+	curl -s -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET "$url_updatelevel" > /dev/null
 }
 function domoticz_updateangle() {
     case $value in 
