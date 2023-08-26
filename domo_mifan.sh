@@ -3,6 +3,8 @@
 # https://github.com/rytilahti/python-miio
 # pip install python-miio
 
+#For Xiaomi Smart Standing Fan 2 Pro
+
 ## MI HOME ##
 ip="192.168.x.xx"
 token="xxxxxxxxxxxxxxx"
